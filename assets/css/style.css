@@ -1,0 +1,46 @@
+h1 { color: #111; 
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 50px; 
+	font-weight: bold; 
+	letter-spacing: -1px; 
+	line-height: 1; 
+	text-align: left; }
+
+.instructions {
+ color: #7c795d; 
+ font-family: 'Source Sans Pro', sans-serif;
+  font-size: 28px; 
+  font-weight: 400; 
+  line-height: 32px; 
+  margin: 0 0 24px; 
+  border-style:solid;
+  border-radius:10px;
+}
+
+h2{
+ color: #b48608; 
+ font-family: 'Droid serif', serif; 
+ font-size: 36px; 
+ font-weight: 400; 
+ font-style: italic;
+  line-height: 44px; 
+  margin: 0 0 12px; 
+  text-align: left;
+}
+
+h3 {
+	color: #CEF0D4; 
+	font-family: 'Rouge Script', cursive; 
+	font-size: 130px; 
+	font-weight: normal; 
+	line-height: 48px;
+	 margin: 0 0 50px;
+	 text-align: left; 
+	 text-shadow: 1px 1px 2px #082b34;
+}
+
+#gems {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}

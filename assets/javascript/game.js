@@ -3,6 +3,7 @@ let losses = 0;
 let targetScore;
 let score;
 let gemValues;
+let gemImgs =["gem1", "gem2", "gem3", "gem4", "gem5", "gem6", "gem7", "gem8"]
 
 
   let resetGame = () => {
@@ -14,27 +15,25 @@ let gemValues;
     };
     $("#target-score").text(targetScore);
   };
-  resetGame();
 
-  let gemImgs =["gem1", "gem2", "gem3", "gem4", "gem5", "gem6", "gem7", "gem8"]
-
+let newGame = () => {
   for (let i = 0; i < gemValues.length; i++) {
-
     let gemImage = $("<img>");
-
     gemImage.addClass("gem-image");
-
     gemImage.attr("src", ("./assets/images/" + gemImgs[i] +".png" ))
-
     gemImage.attr("data-gemvalue", gemValues[i]);
-
     $("#gems").append(gemImage);
   }
+};
+  resetGame();
+  newGame();
+
 
   $(".gem-image").on("click", function() {
 
 
     let gemValue = ($(this).attr("data-gemvalue"));
+
     gemValue = parseInt(gemValue);
     score += gemValue;
 
